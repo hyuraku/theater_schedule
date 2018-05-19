@@ -1,26 +1,38 @@
-%h1 Schedules
+%header.text-center
+  sample_title
 
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
+.container.choise
+  .row
+    .col-sm-4.text-primary.choise__one
+      %h3 choose date
+    .col-sm-4.text-primary.choise__two
+      %h3 choose theater
+    .col-sm-4.text-primary.choise__one
+      %h3 choose work
+.container.result
+  .col-sm-12
+    result you want
+    .row.result__row
+      .col-sm-1
+      .col-sm-5.text-primary
+        .list-group
+          .list-group-item.result__one
+            one movie
+          .list-group-item.result__one
+            one movie
+          .list-group-item.result__one
+            one movie
+          .list-group-item.result__one
+            one movie
+      .col-sm-5.text-primary
+        .list-group
+          .list-group-item.result__one
+            one movie
+          .list-group-item.result__one
+            one movie
+          .list-group-item.result__one
+            one movie
+      .col-sm-1
 
-  %tbody
-    - @schedules.each do |schedule|
-      %tr
-        %td= schedule.work.name
-        %td= schedule.theater.name
-        %td= "#{schedule.work.minutes}分"
-        %td= schedule.schedule_day
-        %td= schedule.screen_name
-        %td= schedule.start_time
-        %td= schedule.end_time
-        -# %td= link_to 'Show', schedule
-        -# %td= link_to 'Edit', edit_schedule_path(schedule)
-        -# %td= link_to 'Destroy', schedule, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
-
--# = link_to 'New Schedule', new_schedule_path
+%footer
+  about copylight
