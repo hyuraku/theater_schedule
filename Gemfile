@@ -56,4 +56,3 @@ gem 'haml-rails'
 
 gem 'bootstrap-sass'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
-gem 'jquery-rails'
