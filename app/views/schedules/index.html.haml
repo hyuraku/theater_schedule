@@ -1,36 +1,41 @@
-%header.text-center
+%header.display-1
   sample_title
 
-.container-fluid.choise
+.container.choise
   .row
-    .col-sm-4.text-primary.choise__one
+    .col-sm-4.text-primary.choise__one.col-xs-12
       %h3 choose date
-    .col-sm-4.text-primary.choise__two
+    .col-sm-4.text-primary.choise__two.col-xs-12
       %h3 choose theater
-    .col-sm-4.text-primary.choise__one
-      %h3 choose work
-.container-fluid.result
+    .col-sm-4.text-primary.choise__one.col-xs-12
+      %h3 choose picture
+.container.result
   .col-sm-12
     .row.result__row
       .col-sm-1
-      .col-sm-5.text-primary
+      .col-sm-10.text-primary
         .list-group
           .list-group-item.result__one
-            one movie
+            Theater_name
+            Title_name
+            screen_name
+            minutes
+            start_time
+            end_time
           .list-group-item.result__one
             one movie
           .list-group-item.result__one
             one movie
           .list-group-item.result__one
             one movie
-      .col-sm-5.text-primary
-        .list-group
-          .list-group-item.result__one
-            one movie
-          .list-group-item.result__one
-            one movie
-          .list-group-item.result__one
-            one movie
+      -# .col-sm-5.text-primary
+      -#   .list-group
+      -#     .list-group-item.result__one
+      -#       one movie
+      -#     .list-group-item.result__one
+      -#       one movie
+      -#     .list-group-item.result__one
+      -#       one movie
       .col-sm-1
 
 %footer

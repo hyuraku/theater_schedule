@@ -3,6 +3,8 @@ header{
   background-color: rgb(221, 130, 106);
   // position: fixed;
   margin-bottom: 0px;
+  font-size: 54px;
+  padding-left: 15px
 }
 
 .choise{
@@ -26,7 +28,7 @@ header{
 .result{
   height: 100vh;
   background-color: rgb(217, 156, 164);
-  padding-top: 50px;
+  padding-top: 100px;
   position: relative;
   overflow: auto;
   &__row{
