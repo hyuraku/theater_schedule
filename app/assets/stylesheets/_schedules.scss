@@ -7,6 +7,10 @@ header{
   padding-left: 15px
 }
 
+body{
+  background-color: rgb(205, 125, 173);
+}
+
 .choise{
   height: calc(60px * 2);
   // position: absolute;
@@ -47,4 +51,5 @@ footer{
   background-color: green;
   margin-bottom: 0px;
   font-size: 20px;
+  position: relative;
 }
