@@ -1,7 +1,9 @@
 header{
   height: calc(60px * 2);
-  // background-color: rgb(221, 130, 106);
+  background-color: rgb(221, 130, 106);
   font-size: 57px;
+  margin-bottom: 0px;
+  padding-top: 30px;
 }
 
 .choise{
@@ -40,8 +42,10 @@ header{
 }
 
 footer{
-  background-color: green;
+  background-color: rgb(226, 105, 138);
   margin-bottom: 0px;
   font-size: 20px;
   position: relative;
+  height: 116px;
+  padding: 48px 0px;
 }
