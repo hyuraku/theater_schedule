@@ -96,6 +96,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
+    material_icons (2.2.1)
+      railties (>= 3.2)
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
@@ -192,6 +194,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  material_icons
   mysql2 (>= 0.3.18, < 0.6.0)
   puma (~> 3.0)
   rails (~> 5.0.7)
