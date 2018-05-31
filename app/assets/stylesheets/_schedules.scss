@@ -21,11 +21,12 @@ header {
 
     &__icon {
       padding: 10px 0;
+      text-align: right;
     }
 
     &__letter {
       font-size: 30px;
-      width: calc(33vw - 120px);
+      // width: calc(33vw - 120px);
     }
   }
 
@@ -36,11 +37,12 @@ header {
 
     &__icon {
       padding: 10px 0;
+      text-align: right;
     }
 
     &__letter {
       font-size: 30px;
-      width: calc(33vw - 120px);
+      // width: calc(33vw - 120px);
     }
   }
 }
