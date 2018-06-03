@@ -1,10 +1,10 @@
-.modal.fade#theater-modal{ "aria-hidden": "true", "aria-labelledby": "theater-modal-label"}
+.modal.fade#theater-modal{ "aria-hidden": true, "aria-labelledby": "theater-modal-label"}
   .modal-dialog
     .modal-content
       .modal-header
         %h5.modal-title#theater-modal-label Theater list
         %button.close{ "aria-label": "Close", "data-dismiss": "modal", type: "button"}
-          %span{"aria-hidden": "true"} ×
+          %span{ "aria-hidden": true} ×
       .modal-body
         - @theaters.each do |theater|
           %tr
