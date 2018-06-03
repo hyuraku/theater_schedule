@@ -1,22 +1,25 @@
 .row
-  %button.col-md-4.text-primary.choise__one.col-xs-12#choise1
+  %button.col-md-4.text-primary.choise__one.col-xs-12#choise1{"data-target" => "#dateModal", "data-toggle" => "modal", :type => "button"}
     .col-md-4.choise__one__icon.col-xs-4
       .mi.icon_size
         access_time
     .col-md-8.choise__one__letter.col-xs-8
       .order_size
         Date
-  %button.col-md-4.text-primary.choise__two.col-xs-12#choise2
+  = render 'date-modal'
+  %button.col-md-4.text-primary.choise__two.col-xs-12#choise2{"data-target" => "#theaterModal", "data-toggle" => "modal", :type => "button"}
     .col-md-4.choise__two__icon.col-xs-4
       .mi.icon_size
         theaters
     .col-md-8.choise__two__letter.col-xs-8
       .order_size
         Theater
-  %button.col-md-4.text-primary.choise__one.col-xs-12#choise3
+  = render 'theater-modal'
+  %button.col-md-4.text-primary.choise__one.col-xs-12{"data-target" => "#pictureModal", "data-toggle" => "modal", :type => "button"}
     .col-md-4.choise__one__icon.col-xs-4
       .mi.icon_size
         movies
     .col-md-8.choise__one__letter.col-xs-8
       .order_size
         Picture
+  = render 'picture-modal'
