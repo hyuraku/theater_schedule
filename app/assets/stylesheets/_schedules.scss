@@ -1,51 +1,98 @@
-header{
+*:focus {
+outline: none;
+}
+
+// 全体、フォントの設定のみ
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+// ヘッダーの設定
+header {
   height: calc(60px * 2);
   background-color: rgb(221, 130, 106);
   font-size: 57px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-top: 30px;
 }
 
-.choise{
+// 選択画面
+.choise {
   height: calc(60px * 2);
   background-color: rgba(29, 60, 108, 0);
-  &__one{
+
+  &__one {
     background-color: rgb(217, 130, 142);
-    height: calc(60px * 2);
-    font-size: 36px;
+    height: -webkit-fill-available;
+    display: inline-flex;
+    border: 0px;
+
+    &__icon {
+      padding: 10px 0;
+      text-align: right;
+    }
+
+    &__letter {
+      font-size: 30px;
+    }
   }
-  &__two{
+
+  &__two {
     background-color: rgb(214, 71, 90);
-    height: calc(60px * 2);
-    font-size: 36px;
+    height: -webkit-fill-available;
+    display: inline-flex;
+    border: 0px;
+
+    &__icon {
+      padding: 10px 0;
+      text-align: right;
+    }
+
+    &__letter {
+      font-size: 30px;
+    }
   }
 }
 
-.result{
+// 選択画面のアイコンと文字の設定
+.icon_size {
+  font-size: 100px;
+}
+
+.order_size {
+  font-size: 60px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+// 検索結果
+.result {
   height: 100vh;
   background-color: rgb(217, 156, 164);
   padding-top: 100px;
   position: relative;
   overflow: auto;
-  &__row{
+
+  &__row {
     margin: auto;
   }
-  &__one{
+
+  &__one {
     // height: 130px;
     margin-bottom: 5px;
-    &__border{
+
+    &__border {
       // border: solid;
       height: 50px;
     }
   }
-
 }
 
-footer{
+footer {
   background-color: rgb(226, 105, 138);
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 20px;
   position: relative;
-  height: 116px;
-  padding: 48px 0px;
+  height: 100px;
+  padding: 40px 0;
 }

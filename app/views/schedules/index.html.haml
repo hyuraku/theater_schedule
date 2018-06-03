@@ -2,65 +2,10 @@
   sample_title
 
 .container-fluid.choise
-  .row
-    .col-md-4.text-primary.choise__one.col-xs-12.card
-      %h3 Choose date
-    .col-md-4.text-primary.choise__two.col-xs-12.card
-      %h3 Choose theater
-    .col-md-4.text-primary.choise__one.col-xs-12.card
-      %h3 Choose picture
+  = render 'choise'
+
 .container-fluid.result
-  .col-md-12
-    .row.result__row
-      .col-md-1
-      .col-md-10.text-primary
-        .list-group
-          .list-group-item.result__one
-            .row
-              .col-md-4.col-xs-12.result__one__border
-                Theater_name
-              .col-md-8.col-xs-12.result__one__border
-                Title_name
-            .row
-              .col-md-2.col-xs-6.result__one__border
-                screen_name
-              .col-md-2.col-xs-6.result__one__border
-                minutes
-              .col-md-4.col-xs-6.result__one__border
-                start_time
-              .col-md-4.col-xs-6.result__one__border
-                end_time
-          .list-group-item.result__one
-            .row
-              .col-md-4.col-xs-12.result__one__border
-                Theater_name
-              .col-md-8.col-xs-12.result__one__border
-                Title_name
-            .row
-              .col-md-2.col-xs-6.result__one__border
-                screen_name
-              .col-md-2.col-xs-6.result__one__border
-                minutes
-              .col-md-4.col-xs-6.result__one__border
-                start_time
-              .col-md-4.col-xs-6.result__one__border
-                end_time
-          .list-group-item.result__one
-            .row
-              .col-md-4.col-xs-12.result__one__border
-                Theater_name
-              .col-md-8.col-xs-12.result__one__border
-                Title_name
-            .row
-              .col-md-2.col-xs-6.result__one__border
-                screen_name
-              .col-md-2.col-xs-6.result__one__border
-                minutes
-              .col-md-4.col-xs-6.result__one__border
-                start_time
-              .col-md-4.col-xs-6.result__one__border
-                end_time
-      .col-md-1
+  = render 'result'
 
 %footer.text-center
   about copylight
