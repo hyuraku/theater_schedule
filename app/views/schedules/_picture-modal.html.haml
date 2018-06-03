@@ -2,11 +2,13 @@
   .modal-dialog
     .modal-content
       .modal-header
-        %h5.modal-title#picture-modal-label Modal title
+        %h5.modal-title#picture-modal-label Pictures list
         %button.close{ "aria-label": "Close", "data-dismiss": "modal", type: "button"}
           %span{"aria-hidden": "true"} ×
       .modal-body
-        \...
+        - @works.each do |work|
+          %tr
+            %td= simple_format(work)
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button"} Close
-        %button.btn.btn-primary{type: "button"} Save changes
+        %button.btn.btn-primary{type: "button"} Search

@@ -5,6 +5,14 @@ class SchedulesController < ApplicationController
   # GET /schedules.json
   def index
     @schedules = Schedule.all
+    @theaters = Theater.all
+    works = []
+    for schedule in Schedule.all do
+      works.push(schedule.work.name)
+    end
+    @works = (works.uniq).sort
+    #@schedule単体のwork.nameを列に投入
+    #重複分は消して並び替えて表示させる
   end
 
   # GET /schedules/1
