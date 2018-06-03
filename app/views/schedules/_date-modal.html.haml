@@ -1,12 +1,12 @@
-#dateModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "dateModalLabel", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog.modal-lg{:role => "document"}
+.modal.fade#date-modal{"aria-hidden": "true", "aria-labelledby": "date-modal-label", role: "dialog", tabindex: "-1"}
+  .modal-dialog.modal-lg{role: "document"}
     .modal-content
       .modal-header
-        %h5#dateModalLabel.modal-title Modal title
-        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-          %span{"aria-hidden" => "true"} ×
+        %h5.modal-title#date-modal-label Modal title
+        %button.close{"aria-label": "Close", "data-dismiss": "modal", type: "button"}
+          %span{"aria-hidden": "true"} ×
       .modal-body
         \...
       .modal-footer
-        %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
-        %button.btn.btn-primary{:type => "button"} Save changes
+        %button.btn.btn-secondary{"data-dismiss": "modal", type: "button"} Close
+        %button.btn.btn-primary{type: "button"} Save changes
