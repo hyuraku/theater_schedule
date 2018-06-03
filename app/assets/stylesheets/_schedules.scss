@@ -2,10 +2,12 @@
 outline: none;
 }
 
+// 全体、フォントの設定のみ
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
+// ヘッダーの設定
 header {
   height: calc(60px * 2);
   background-color: rgb(221, 130, 106);
@@ -63,30 +65,6 @@ header {
   padding: 30px 0;
 }
 
-
-.date-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-// 閉じるボタン
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 // 検索結果
 .result {
   height: 100vh;
@@ -115,6 +93,6 @@ footer {
   margin-bottom: 0;
   font-size: 20px;
   position: relative;
-  height: 116px;
-  padding: 48px 0;
+  height: 100px;
+  padding: 40px 0;
 }
