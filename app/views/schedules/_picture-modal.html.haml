@@ -5,6 +5,8 @@
         %h5.modal-title#picture-modal-label Pictures list
         %button.close{ "aria-label": "Close", "data-dismiss": "modal", type: "button" }
           %span{ "aria-hidden": true } ×
+        %label Picture:
+        %input{type: 'text',id: 'theater-search'}
       .modal-body
         - @works.each do |work|
           %tr
