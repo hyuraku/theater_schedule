@@ -67,7 +67,6 @@ header {
 
 // 検索結果
 .result {
-  height: 100vh;
   background-color: rgb(217, 156, 164);
   padding-top: 100px;
   position: relative;
@@ -83,7 +82,7 @@ header {
 
     &__border {
       // border: solid;
-      height: 50px;
+      height: calc(50px * 1.5);
     }
   }
 }
