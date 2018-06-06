@@ -10,17 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180512070940) do
+ActiveRecord::Schema.define(version: 20180606124538) do
 
   create_table "schedules", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "work_id",      null: false
-    t.integer  "theater_id",   null: false
-    t.datetime "schedule_day", null: false
-    t.string   "screen_name",  null: false
-    t.string   "start_time",   null: false
-    t.string   "end_time",     null: false
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "work_id",        null: false
+    t.integer  "theater_id",     null: false
+    t.datetime "schedule_day",   null: false
+    t.string   "screen_name",    null: false
+    t.string   "start_time",     null: false
+    t.string   "end_time",       null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.datetime "screening_date"
     t.index ["theater_id"], name: "index_schedules_on_theater_id", using: :btree
     t.index ["work_id"], name: "index_schedules_on_work_id", using: :btree
   end
