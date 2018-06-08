@@ -58,3 +58,5 @@ gem 'bootstrap-sass'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 
 gem 'material_icons'
+
+gem 'webpacker', github: 'rails/webpacker'

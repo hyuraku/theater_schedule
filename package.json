@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@rails/webpacker": "^3.5.3",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "devDependencies": {
+    "3.0.0": "^3.0.0",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "babel": "^6.23.0",
+    "babel-loader": "8.0.0-beta.0",
+    "postcss-preset-env": "^5.1.0",
+    "to": "^0.2.9",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "2",
+    "webpacker": "^0.0.3"
+  }
+}
