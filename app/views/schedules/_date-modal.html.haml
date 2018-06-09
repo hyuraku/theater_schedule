@@ -7,9 +7,9 @@
           %span{ "aria-hidden": true } ×
       .modal-body
         - @dates.each do |date|
-          %tr
-            %td= date
-            %br
+          .card
+            .card__body
+              = date
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
         %button.btn.btn-primary{ type: "button"} Search
