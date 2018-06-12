@@ -8,8 +8,9 @@
         %input{ type: 'text',id: 'theater-search' }
       .modal-body
         - @works.each do |work|
-          %tr
-            %td= simple_format(work)
+          .card
+            .card__body
+              = simple_format(work)
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
-        %button.btn.btn-primary{ type: "button"} Search
+        %button.btn.btn-primary{ type: "button" } Search
