@@ -1,17 +1,19 @@
-.modal.fade#theater-modal{ "aria-hidden": true, "aria-labelledby": "theater-modal-label" }
-  .modal-dialog
+.modal.fade#picture-modal{ "aria-hidden": true, "aria-labelledby": "picture-modal-label" }
+  .modal-dialog.modal-lg
     .modal-content
       .modal-header
         %button.close{ "aria-label": "Close", "data-dismiss": "modal", type: "button" }
           %span{ "aria-hidden": true } ×
-        %label Theater:
+        %label Picture:
         %input{ type: 'text',id: 'theater-search' }
       .modal-body
-        - @theaters.each do |theater|
+        - @works.each do |work|
           .card
+            -# .card__body{'v-on:click': "setWorkInfo(#{work.id})"}
             .card__body
-              = simple_format(theater.name)
-
+              = simple_format(work)
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
-        %button.btn.btn-primary{ type: "button" } Search
+        %button.btn.btn-primary{ type: "button"} Search
+
+-# = javascript_pack_tag 'works/index'
