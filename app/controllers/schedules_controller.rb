@@ -13,6 +13,10 @@ class SchedulesController < ApplicationController
     @works = (works.uniq).sort
     #@schedule単体のwork.nameを列に投入
     #重複分は消して並び替えて表示させる
+    @dates=[]
+    for i in 0..3 do
+      @dates.push(Time.zone.today + i)
+    end
   end
 
   # GET /schedules/1
