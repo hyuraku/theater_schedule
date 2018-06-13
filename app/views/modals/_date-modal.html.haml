@@ -2,11 +2,14 @@
   .modal-dialog.modal-lg
     .modal-content
       .modal-header
-        %h5.modal-title#date-modal-label Modal title
+        %h5.modal-title#date-modal-label
         %button.close{ "aria-label": "Close", "data-dismiss": "modal", type: "button" }
           %span{ "aria-hidden": true } ×
       .modal-body
-        \...
+        - @dates.each do |date|
+          .card
+            .card__body
+              = date
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
         %button.btn.btn-primary{ type: "button"} Search

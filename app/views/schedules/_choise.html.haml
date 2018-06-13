@@ -6,7 +6,7 @@
     .col-md-8.choise__one__letter.col-xs-8
       .order_size
         Date
-  = render 'date-modal'
+  = render 'modals/date-modal'
   %button.col-md-4.text-primary.choise__two.col-xs-12{ "data-target": "#theater-modal", "data-toggle": "modal", type: "button" }
     .col-md-4.choise__two__icon.col-xs-4
       .mi.icon_size
@@ -14,7 +14,7 @@
     .col-md-8.choise__two__letter.col-xs-8
       .order_size
         Theater
-  = render 'theater-modal'
+  = render 'modals/theater-modal'
   %button.col-md-4.text-primary.choise__one.col-xs-12{ "data-target":  "#picture-modal", "data-toggle": "modal", type: "button" }
     .col-md-4.choise__one__icon.col-xs-4
       .mi.icon_size
@@ -22,4 +22,4 @@
     .col-md-8.choise__one__letter.col-xs-8
       .order_size
         Picture
-  = render 'picture-modal'
+  = render 'modals/picture-modal'
