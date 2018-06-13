@@ -14,7 +14,7 @@
     "@babel/preset-env": "^7.0.0-beta.51",
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "8.0.0-beta.0",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "postcss-preset-env": "^5.1.0",
     "to": "^0.2.9",
