@@ -5,8 +5,9 @@
       {
         "modules": false,
         "targets": {
-          "forceAllTransforms": true
+
         },
+        "forceAllTransforms": true,
         "useBuiltIns": "usage"
       }
     ]
