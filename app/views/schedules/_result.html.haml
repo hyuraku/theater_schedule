@@ -3,7 +3,7 @@
     .col-md-1
     .col-md-10.text-primary
       .list-group
-        .list-group-item.result__one{'v-show': 'scheduleInfoBool','v-for': 'schedule in scheduleInfo'}
+        .list-group-item.result__one{ 'v-show': 'scheduleInfoBool','v-for': 'schedule in scheduleInfo' }
           .row
             .col-md-2.col-xs-6.result__one__border
               {{schedule.schedule_day}}
@@ -21,4 +21,3 @@
             .col-md-4.col-xs-6.result__one__border
               {{schedule.end_time}}
     .col-md-1
-  = javascript_pack_tag 'schedules/index'
