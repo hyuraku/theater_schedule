@@ -10,4 +10,14 @@ class Api::SchedulesController < ApplicationController
     render 'show', formats: 'json', handlers: 'jbuilder'
   end
 
+  def index
+    @schedules = Schedule.where(work_id: params[:work_id])
+    render 'show', formats: 'json', handlers: 'jbuilder'
+  end
+
+  # def get
+  #   @schedules = Schedule.where(schedule_day: )
+  #   render 'show', formats: 'json', handlers: 'jbuilder'
+  # end
+
 end
