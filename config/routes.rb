@@ -8,5 +8,6 @@ Rails.application.routes.draw do
    resources :schedules
    # get "schedules/show/:theater_id/:work_id/" => "schedules#show"
    get "schedules/show/:theater_id/" => "schedules#show"
+   get "schedules/index/:work_id/" => "schedules#index"
   end
 end

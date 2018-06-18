@@ -6,7 +6,7 @@ import axios from 'axios';
 // var id_list = []
 
 var theaterIndex =new Vue({
-  el: '.js-theaterIndex',
+  el: '#js-theaterIndex',
   data: {
     scheduleInfo: {},
     scheduleInfoBool: false
@@ -19,6 +19,13 @@ var theaterIndex =new Vue({
           this.scheduleInfo = res.data;
           this.scheduleInfoBool = true;
         });
+    },
+    setWorkInfo(id){
+      axios.get(`api/schedules/index/${id}`)
+      .then(res => {
+        this.scheduleInfo = res.data;
+        this.scheduleInfoBool = true;
+      });
     }
   }
 });
