@@ -8,12 +8,9 @@
         %input{ type: 'text',id: 'theater-search' }
       .modal-body
         - @works.each do |work|
-          .card
-            -# .card__body{'v-on:click': "setWorkInfo(#{work.id})"}
+          .card{'v-on:click': "setWorkInfo(#{work.id})"}
             .card__body
-              = simple_format(work)
+              = simple_format(work.name)
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
-        %button.btn.btn-primary{ type: "button" } Search
-
--# = javascript_pack_tag 'works/index'
+        -# %button.btn.btn-primary{ type: "button" } Search
