@@ -16,7 +16,7 @@ class SchedulesController < ApplicationController
     #@schedule単体のwork.nameを列に投入
     #重複分は消して並び替えて表示させる
     @dates=[]
-    for i in 0..3 do
+    for i in 0..2 do
       @dates.push(Time.zone.today + i)
     end
   end
