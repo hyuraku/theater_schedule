@@ -3,8 +3,10 @@ import axios from 'axios';
 
 // 作品のIDのリスト
 // 劇場のIDのリスト
-// var id_list = []
-
+var thea_id_list = []
+var work_id_list = []
+var target = []
+window.onload = function (){
 var theaterIndex =new Vue({
   el: '#js-theaterIndex',
   data: {
@@ -13,7 +15,7 @@ var theaterIndex =new Vue({
   },
   methods: {
     setTheaterInfo(id){
-      // id_list.push(id)
+      thea_id_list.push(id)
       axios.get(`api/schedules/show/${id}`)
         .then(res => {
           this.scheduleInfo = res.data;
@@ -21,7 +23,16 @@ var theaterIndex =new Vue({
         });
     },
     setWorkInfo(id){
+      work_id_list.push(id)
       axios.get(`api/schedules/index/${id}`)
+      .then(res => {
+        this.scheduleInfo = res.data;
+        this.scheduleInfoBool = true;
+      });
+    },
+    setDateInfo(id){
+      target.push(id)
+      axios.get(`api/schedules/get/${id}`)
       .then(res => {
         this.scheduleInfo = res.data;
         this.scheduleInfoBool = true;
@@ -29,3 +40,6 @@ var theaterIndex =new Vue({
     }
   }
 });
+
+console.log(target)
+}

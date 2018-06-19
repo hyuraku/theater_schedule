@@ -15,9 +15,9 @@ class Api::SchedulesController < ApplicationController
     render 'show', formats: 'json', handlers: 'jbuilder'
   end
 
-  # def get
-  #   @schedules = Schedule.where(schedule_day: )
-  #   render 'show', formats: 'json', handlers: 'jbuilder'
-  # end
+  def get
+    @schedules = Schedule.where(schedule_day:  (Time.zone.today + params[:id].to_i))
+    render 'show', formats: 'json', handlers: 'jbuilder'
+  end
 
 end

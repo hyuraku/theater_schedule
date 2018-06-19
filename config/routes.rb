@@ -9,5 +9,6 @@ Rails.application.routes.draw do
    # get "schedules/show/:theater_id/:work_id/" => "schedules#show"
    get "schedules/show/:theater_id/" => "schedules#show"
    get "schedules/index/:work_id/" => "schedules#index"
+   get "schedules/get/:id/" => "schedules#get"
   end
 end
