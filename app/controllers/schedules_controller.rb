@@ -4,7 +4,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedules = Schedule.all
+    # @schedules = Schedule.all
     @theaters = Theater.all
     works_id = []
     #ハッシュ作って格納しましょう
