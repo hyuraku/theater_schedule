@@ -4,7 +4,8 @@
     <title>Theater-Schedule</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all'%>
-    <%= javascript_pack_tag 'schedules/index'%>
+    <!-- <%= javascript_pack_tag 'schedules/index'%> -->
+    <%= yield(:javascript_pack_tag)%>
     <%= javascript_include_tag 'application'%>
     <%= favicon_link_tag 'favicon.ico'%>
   </head>
