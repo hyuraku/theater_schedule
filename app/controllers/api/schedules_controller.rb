@@ -3,6 +3,12 @@ class Api::SchedulesController < ApplicationController
 
   # GET /schedules/1
   # GET /schedules/1.json
+
+  def get
+    @schedules = Schedule.where(schedule_day:  (Time.zone.today + params[:id].to_i))
+    render 'show', formats: 'json', handlers: 'jbuilder'
+  end
+  
   def show
     # @schedules = Schedule.where(theater_id: params[:theater_id]).where(work_id: params[:work_id])
     @schedules = Schedule.where(theater_id: params[:theater_id])
@@ -15,9 +21,20 @@ class Api::SchedulesController < ApplicationController
     render 'show', formats: 'json', handlers: 'jbuilder'
   end
 
-  def get
-    @schedules = Schedule.where(schedule_day:  (Time.zone.today + params[:id].to_i))
-    render 'show', formats: 'json', handlers: 'jbuilder'
+  def get_date_thea
+
+  end
+
+  def get_date_work
+
+  end
+
+  def get_thea_work
+
+  end
+
+  def get_all_date
+
   end
 
 end

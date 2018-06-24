@@ -10,5 +10,10 @@ Rails.application.routes.draw do
    get "schedules/show/:theater_id/" => "schedules#show"
    get "schedules/index/:work_id/" => "schedules#index"
    get "schedules/get/:id/" => "schedules#get"
+
+   get "schedules/get_date_thea/:id/:theater_id" => "schedules#get_date_thea"
+   get "schedules/get_date_work/:id/:work_id" => "schedules#get_date_work"
+   get "schedules/get_thea_work/:theater_id/:work_id" => "schedules#get_thea_work"
+   get "schedules/get_all_date/:id/:theater_id/:work_id" => "schedules#get_all_date"
   end
 end
