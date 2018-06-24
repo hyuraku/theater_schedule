@@ -9,3 +9,5 @@
 
 console.log('Hello World from Webpacker')
 import './schedules/index'
+import 'src/application' // application.scss の読み込み
+import 'bootstrap/dist/js/bootstrap'
