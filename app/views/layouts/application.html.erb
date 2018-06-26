@@ -3,13 +3,9 @@
   <head>
     <title>Theater-Schedule</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'application', media: 'all'%>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- <%= javascript_pack_tag 'schedules/index'%> -->
-    <%= yield(:javascript_pack_tag)%>
-    <!-- <%= javascript_include_tag 'application'%> -->
     <%= favicon_link_tag 'favicon.ico'%>
     <%= javascript_pack_tag 'application'%>
     <%= stylesheet_pack_tag 'application'%>
