@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: toho_schedule_production
-  username: toho_schedule
-  password: <%= ENV['TOHO_SCHEDULE_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
