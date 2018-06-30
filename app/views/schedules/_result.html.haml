@@ -3,6 +3,7 @@
     .col-md-1
     .col-md-10.text-primary
       .list-group
+        .result__first{ 'v-show': 'scheduleTopBool'}
         .list-group-item.result__one{ 'v-show': 'scheduleInfoBool','v-for': 'schedule in scheduleInfo' }
           .row
             .col-md-2.col-xs-6.result__one__border

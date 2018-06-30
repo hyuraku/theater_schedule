@@ -12,7 +12,8 @@ window.onload = function() {
     el: '#js-theaterIndex',
     data: {
       scheduleInfo: {},
-      scheduleInfoBool: false
+      scheduleInfoBool: false,
+      scheduleTopBool: true,
     },
     methods: {
       setDateInfo(id) {
@@ -73,6 +74,7 @@ window.onload = function() {
             .then(res => {
               this.scheduleInfo = res.data;
               this.scheduleInfoBool = true;
+              this.scheduleTopBool= false;
             });
         // }
         // axios.get(`api/schedules/get/${id}`)
@@ -88,6 +90,7 @@ window.onload = function() {
           .then(res => {
             this.scheduleInfo = res.data;
             this.scheduleInfoBool = true;
+            this.scheduleTopBool= false;
           });
       },
 
@@ -97,6 +100,7 @@ window.onload = function() {
           .then(res => {
             this.scheduleInfo = res.data;
             this.scheduleInfoBool = true;
+            this.scheduleTopBool=false;
           });
       }
     }
