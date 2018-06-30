@@ -3,55 +3,22 @@
     .col-md-1
     .col-md-10.text-primary
       .list-group
-        .list-group-item.result__one
+        .result__first{ 'v-show': 'scheduleTopBool'}
+        .list-group-item.result__one{ 'v-show': 'scheduleInfoBool','v-for': 'schedule in scheduleInfo' }
           .row
             .col-md-2.col-xs-6.result__one__border
-              screening_date
+              {{schedule.schedule_day}}
             .col-md-4.col-xs-6.result__one__border
-              Theater_name
+              {{schedule.theater_name}}
             .col-md-6.col-xs-12.result__one__border
-              Title_name
+              {{schedule.work_name}}
           .row
             .col-md-2.col-xs-6.result__one__border
-              screen_name
+              {{schedule.screen_name}}
             .col-md-2.col-xs-6.result__one__border
-              minutes
+              {{schedule.work_minutes}}
             .col-md-4.col-xs-6.result__one__border
-              start_time
+              {{schedule.start_time}}
             .col-md-4.col-xs-6.result__one__border
-              end_time
-        .list-group-item.result__one
-          .row
-            .col-md-2.col-xs-6.result__one__border
-              screening_date
-            .col-md-4.col-xs-6.result__one__border
-              Theater_name
-            .col-md-6.col-xs-12.result__one__border
-              Title_name
-          .row
-            .col-md-2.col-xs-6.result__one__border
-              screen_name
-            .col-md-2.col-xs-6.result__one__border
-              minutes
-            .col-md-4.col-xs-6.result__one__border
-              start_time
-            .col-md-4.col-xs-6.result__one__border
-              end_time
-        .list-group-item.result__one
-          .row
-            .col-md-2.col-xs-6.result__one__border
-              screening_date
-            .col-md-4.col-xs-6.result__one__border
-              Theater_name
-            .col-md-6.col-xs-12.result__one__border
-              Title_name
-          .row
-            .col-md-2.col-xs-6.result__one__border
-              screen_name
-            .col-md-2.col-xs-6.result__one__border
-              minutes
-            .col-md-4.col-xs-6.result__one__border
-              start_time
-            .col-md-4.col-xs-6.result__one__border
-              end_time
+              {{schedule.end_time}}
     .col-md-1
