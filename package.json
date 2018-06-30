@@ -10,7 +10,8 @@
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.4",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.16",
+    "webpack-manifest-plugin": "^2.0.3"
   },
   "devDependencies": {
     "3.0.0": "^3.0.0",
