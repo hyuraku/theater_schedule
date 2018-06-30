@@ -2,7 +2,7 @@ app_path = File.expand_path('../../', __dir__)
 
 worker_processes 2
 
-ENV['BUNDLE_GEMFILE'] = rails_root + "/Gemfile"
+ENV['BUNDLE_GEMFILE'] = app_path + "/Gemfile"
 
 working_directory app_path
 pid "#{app_path}/tmp/pids/unicorn.pid"
