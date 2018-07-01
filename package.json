@@ -1,4 +1,6 @@
 {
+  "name":"theater_schedule",
+  "private":true,
   "dependencies": {
     "@rails/webpacker": "^4.0.0-pre.2",
     "axios": "^0.18.0",
